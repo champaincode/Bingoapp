@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from "./assets/logo.png"
 
 function App() {
   return (
+    <div className='switchBaño'>
+      <img src={logo} className="imglogo"/>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='baño1'>
+        <h1>BAÑO POR BELGRANO</h1>
+      <label className="button" for="toggle">
+  <input id="toggle" type="checkbox"/>
+  <span className="slider"></span>
+</label>
+      </div>
+      <div className='baño2'>
+        <h1>BAÑO POR CHICLANA</h1>
+        <label className="buttonDos" for="toggleDos">
+  <input id="toggleDos" type="checkbox"/>
+  <span className="sliderDos"></span>
+</label>
+      </div>
+ 
+    </div>
+   
+
     </div>
   );
 }
